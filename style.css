@@ -1,0 +1,135 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5e5ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 600px;
+    width: 650px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container form input{
+    margin: 10px;
+    font-size: 20px;
+    border: none;   
+    border-radius: 6px;
+}
+.container form legend{
+    position: relative;
+    bottom: 10px;
+    font-size: 35px;
+    color: #383d7f;
+    font-weight: 450;
+}
+#firstname, #lastname{
+    height: 30px;
+    padding: 10px;
+    background-color: #e7e9fe;
+}
+#phone, #email{
+    height: 30px;
+    padding: 10px;
+    background-color: #dce1ff;
+}
+#address{
+    height: 35px;
+    width: 530px;
+    padding: 10px;
+    background-color: #c7cdff;
+}
+#message{
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    height: 60px;
+    width: 530px;
+    padding: 10px;
+    background-color: #a5b1fd;
+}
+#submitbtn{
+    font-size: 20px;
+    padding: 10px;
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #253bf3;
+    color: white;
+    border: none;
+}
+#submitbtn:hover{
+    cursor: pointer;
+}
+#thanksmsg{
+    position: relative;
+    right: 180px;
+    bottom: 10px;
+}
+
+@media screen and (max-width:500px){
+    body{
+        margin: 5px;
+        padding: 5px;
+        height: 100vh;  
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d5e5ff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        height: 500px;
+        width: 400px;
+        background-color: white;
+        gap: 20px;
+    }
+    .container form input{
+        border: none;   
+        border-radius: 6px;
+    }
+    .container form legend{
+        font-size: 25px;
+        color: #383d7f;
+        font-weight: 450;
+        position: relative;
+        left: 10px;
+    }
+    #firstname, #lastname{
+        background-color: #e7e9fe;
+        height: 20px;
+        width: 150px;
+    }
+    #phone, #email{
+        background-color: #dce1ff;
+        height: 20px;
+        width: 150px;
+    }
+    #address{
+        background-color: #c7cdff;
+        height: 30px;
+        width: 340px;
+    }
+    #message{
+        height: 50px;
+        width: 340px;
+        border: none;
+        border-radius: 6px;
+        background-color: #a5b1fd;
+    }
+    #thanksmsg{
+        position: relative;
+        left: 0px;
+    }
+}
